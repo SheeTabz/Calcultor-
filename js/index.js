@@ -37,3 +37,12 @@ const calcObj = [
 ]
 const container = document.querySelector(".container")
 const key = document.querySelector("#uniq")
+
+calcObj.map(item =>{
+    const btn= document.createElement("input")
+    btn.className = "keys"
+    btn.value=item.val
+    btn.name=item.name
+    btn.type = "button"
+    key.appendChild(btn)
+})
