@@ -10,12 +10,8 @@ body{
     background-color: blueviolet;
 }
 .form{
-    position: absolute;
-    top: 40%;
-    left: 20%;
     width: 50%;
-    margin: auto;
-    background-color: burlywood;
+    margin: 30vh auto 0 auto;
    
 }
 #result{
