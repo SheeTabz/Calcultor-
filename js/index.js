@@ -35,3 +35,5 @@ const calcObj = [
     {name: "equals", val: "="},
     {name: "addition", val: "+"},
 ]
+const container = document.querySelector(".container")
+const key = document.querySelector("#uniq")
