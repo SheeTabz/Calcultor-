@@ -46,3 +46,14 @@ calcObj.map(item =>{
     btn.type = "button"
     key.appendChild(btn)
 })
+
+function add(obj,key,val){
+    obj[key]=val
+    
+}
+const find = calcObj.find(item =>{ return item.name == "addition" })
+
+key.addEventListener("click", function(event){
+    event.target.value("+")
+    alert("Please")
+})
