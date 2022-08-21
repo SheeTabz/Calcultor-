@@ -12,7 +12,18 @@ body{
 .form{
     width: 50%;
     margin: 30vh auto 0 auto;
+}
+input[type="button"]{
+    cursor: pointer;
+}
+input[name="num"]{
+    background-color: #F1F3F4;
    
+}
+input[name="equals"]{
+    background-color: #4385F4;
+    font-size: 1.3rem;
+    color: #fff;
 }
 #result{
     padding: 20px 5px;
