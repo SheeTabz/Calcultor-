@@ -25,10 +25,10 @@ body{
     border-radius: 10px;
     margin: auto;
     margin-bottom: 20px;
-    border: 2px solid grey;
+    border: 1px solid grey;
 }
 #result:hover{
-    box-shadow: 2px 2px 5px grey;
+    box-shadow: 2px 1px 5px grey;
 }
  .key{
     width: fit-content;
