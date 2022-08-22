@@ -35,25 +35,43 @@ const calcObj = [
     {name: "equals", val: "="},
     {name: "addition", val: "+"},
 ]
+const form = document.querySelector("form");
 const container = document.querySelector(".container")
 const key = document.querySelector("#uniq")
 
+
+function add(obj, key, val){
+    obj[key] = val;
+    let total = 0
+//     for(let item in obj){
+//     if( obj[item].name=== "num"){
+//         total += parseInt(obj[item].val)
+//         console.log ( total);
+//     }
+// }
+}
+add(calcObj)
+
+function loop(){
 calcObj.map(item =>{
     const btn= document.createElement("input")
     btn.className = "keys"
     btn.value=item.val
     btn.name=item.name
     btn.type = "button"
+    btn.addEventListener("click",handles)
     key.appendChild(btn)
 })
-
-function add(obj,key,val){
-    obj[key]=val
-    
 }
-const find = calcObj.find(item =>{ return item.name == "addition" })
+loop()
+// function handles()
 
-key.addEventListener("click", function(event){
-    event.target.value("+")
-    alert("Please")
-})
+
+function handles(){
+    key.addEventListener("click", (e) => {
+       e.target.childNode.remove()
+    })
+}
+
+
+
