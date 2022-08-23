@@ -39,39 +39,39 @@ const form = document.querySelector("form");
 const container = document.querySelector(".container")
 const key = document.querySelector("#uniq")
 
-
-function add(obj, key, val){
-    obj[key] = val;
-    let total = 0
-//     for(let item in obj){
-//     if( obj[item].name=== "num"){
-//         total += parseInt(obj[item].val)
-//         console.log ( total);
-//     }
+  
+// function add(obj, key, val){
+//     obj[key] = val;
+//     let total = 0
+// //     for(let item in obj){
+// //     if( obj[item].name=== "num"){
+// //         total += parseInt(obj[item].val)
+// //         console.log ( total);
+// //     }
+// // }
 // }
-}
-add(calcObj)
+// add(calcObj)
 
-function loop(){
+
 calcObj.map(item =>{
     const btn= document.createElement("input")
     btn.className = "keys"
     btn.value=item.val
     btn.name=item.name
     btn.type = "button"
-    btn.addEventListener("click",handles)
     key.appendChild(btn)
 })
-}
-loop()
+console.log(key)
 // function handles()
 
-
-function handles(){
-    key.addEventListener("click", (e) => {
-       e.target.childNode.remove()
-    })
-}
+//Handles numbers
+function num(){
+    const numb = calcObj.filter(item => item.name === 'num' ? item.val : 0 )
+    .map(item => parseInt(item.val));
+    return numb
+  }
+ console.log( num())
+   
 
 
 
